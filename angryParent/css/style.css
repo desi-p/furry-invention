@@ -1,0 +1,62 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+h1, h2, form{
+  text-align: center;
+}
+button{
+  display: inline-block;
+  margin: 20px;
+}
+
+section{
+  display: flex;
+  justify-content: center;
+}
+ul{
+  width: 100px;
+  height: 200px;
+  border: 3px solid black;
+  margin: 0 auto;
+  list-style: none;
+  padding: 0;
+}
+li{
+  text-align: center;
+  width: 94px;
+  height: 49px;
+  border: 1px solid black;
+}
+h2{
+  font-size: 100px;
+  color: red;
+  font-weight: bold;
+}
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+.slow {
+  font-size: 150px;
+  font-weight:bolder;
+  animation:blinkingText 1.2s infinite;
+}
+
+@keyframes blinkingText{
+  0%{     color: red;    }
+  49%{    color: red; }
+  60%{    color: transparent; }
+  99%{    color:transparent;  }
+  100%{   color: red;    }
+}
